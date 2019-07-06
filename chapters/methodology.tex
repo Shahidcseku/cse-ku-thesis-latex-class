@@ -1,0 +1,76 @@
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+\section{Section Name}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. The process is shown in Fig.~\ref{demofig}.\\
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{images/demo.jpg}
+\caption{A demo figure.}
+\label{demofig}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{images/demo.jpg}
+\caption{A demo figure small scale.}
+\label{demofigsmall}
+\end{figure}
+
+A demo table is shown in Table ~\ref{demotable}.\\
+
+\begin{table*}
+	\caption{A table demo.}
+	\begin{center}
+
+		\begin{tabular}{p{1cm} p{2.5cm} p{10cm}}
+			\hline
+
+Sl.	&	Attributes	&	Description	\\
+
+\hline
+
+1	&	Name	&	Lorem ipsum dolor sit amet, consectetur adipiscing elit	\\
+2	&	Sex	& Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit	\\
+3	&	University	&	Lorem ipsum dolor sit amet, consectetur adipiscing elit	\\
+4	&	Subject 	&	Lorem ipsum dolor sit amet, consectetur adipiscing elit\\
+5	&	Whatever	&	Lorem ipsum dolor sit amet, consectetur adipiscing elit\\
+
+			\noalign{\smallskip}\hline
+		\end{tabular}
+	\end{center}
+	\label{demotable}
+\end{table*}  
+
+
+Equation and symbols
+\begin{equation}
+E = E_{DP09} - \sum_{k=3}^5 \sum_i(Pen^k(mer_i^k))
+\end{equation}
+
+$\alpha \beta \gamma \phi \Delta \delta \triangle 25^{\circ} $
+
+\subsection{Algorithm}
+
+A demo algorithm
+% Crossover
+\begin{algorithm}
+\caption{Crossover}
+\label{algoCrossover}
+\begin{algorithmic}[1]
+    \State \textbf{Input:} $m_1[1, 2,..., n], m_2[1, 2,..., n]$
+    \State \textbf{Output:} $m_{11}, m_{22}$
+    \State $x \gets random(1:n)$
+    \State $y \gets random(1:n)$
+    \For{$i \gets 1$ to n}
+        \If{$(i<x$ or $i>y)$}
+            \State $m_{11}[i] \gets m_1[i]$
+            \State $m_{22}[i] \gets m_2[i]$
+        \ElsIf{$(x\le i$ and $i \le y)$}
+            \State $m_{11}[i] \gets m_2[i]$
+            \State $m_{22}[i] \gets m_1[i]$
+        \EndIf
+    \EndFor
+    
+\end{algorithmic}
+\end{algorithm}
